@@ -26,14 +26,13 @@ document.onkeyup = function(event) {
         console.log("wins: " + wins);
         left = 8;
         guesses = "";
-        // var letter = alphabet[Math.floor(Math.random() * (alphabet.length))];
-        // console.log("computer choice: " + letter);
+        letter = alphabet[Math.floor(Math.random() * (alphabet.length))];
+        console.log("computer choice: " + letter);
     }
 
     else if (left > 0) {
         (left -= 1);;
         console.log("guesses: " + guesses);
-        //subtract 1 from guesses left
         guesses += guess + ", ";
     }
 
@@ -43,8 +42,8 @@ document.onkeyup = function(event) {
         console.log("losses: " + losses);
         left = 8;
         guesses = "";
-        // var letter = alphabet[Math.floor(Math.random() * (alphabet.length))];
-        // console.log("computer choice: " + letter);
+        letter = alphabet[Math.floor(Math.random() * (alphabet.length))];
+        console.log("computer choice: " + letter);
     }
 
     //update the stats in HTML
