@@ -15,7 +15,6 @@ console.log("computer choice: " + letter);
 document.onkeyup = function(event) {
     guess = event.key;
     console.log("player guess: " + guess);
-    // var guesses = guess;
 
     if (~alphabet.indexOf(guess)) {
 
@@ -52,7 +51,6 @@ document.onkeyup = function(event) {
         alert("Please choose a letter.");
     }
 
-    //update the stats in HTML
     document.getElementById("wins").innerHTML = wins;
     document.getElementById("losses").innerHTML = losses;
     document.getElementById("guesses").innerHTML = guesses;
