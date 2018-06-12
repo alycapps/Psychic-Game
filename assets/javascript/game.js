@@ -25,6 +25,7 @@ document.onkeyup = function(event) {
         wins++;
         console.log("wins: " + wins);
         left = 8;
+        guesses = "";
         // var letter = alphabet[Math.floor(Math.random() * (alphabet.length))];
         // console.log("computer choice: " + letter);
     }
@@ -41,6 +42,7 @@ document.onkeyup = function(event) {
         losses++;
         console.log("losses: " + losses);
         left = 8;
+        guesses = "";
         // var letter = alphabet[Math.floor(Math.random() * (alphabet.length))];
         // console.log("computer choice: " + letter);
     }
