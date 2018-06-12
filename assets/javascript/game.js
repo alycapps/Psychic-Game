@@ -5,12 +5,12 @@ var wins = 0;
 var losses = document.getElementById("losses");
 var losses = 0;
 var guesses = document.getElementById("guesses");
+var guesses = "";
 var left = document.getElementById("left");
 var left = 8;
 
 var letter = alphabet[Math.floor(Math.random() * (alphabet.length))];
 console.log("computer choice: " + letter);
-
 
 document.onkeyup = function(event) {
     guess = event.key;
@@ -21,6 +21,7 @@ document.onkeyup = function(event) {
 
         if (guess===letter) {
             console.log("you win");
+            alert("You win the letter was: " + letter + "!");
             wins++;
             console.log("wins: " + wins);
             left = 8;
@@ -37,6 +38,7 @@ document.onkeyup = function(event) {
 
         else {
             console.log("you lose");
+            alert("Try again, the letter was: " + letter + ".");
             losses++;
             console.log("losses: " + losses);
             left = 8;
